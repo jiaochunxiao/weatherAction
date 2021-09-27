@@ -32,7 +32,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Get Date
-        run: echo "REPORT_DATE=$(TZ=':Asia/Beijing' date '+%Y-%m-%d %T')" >> $GITHUB_ENV
+        run: echo "REPORT_DATE=$(TZ=':Asia/Shanghai' date '+%Y-%m-%d %T')" >> $GITHUB_ENV
       
       - name: Send email
         uses: dawidd6/action-send-mail@master
