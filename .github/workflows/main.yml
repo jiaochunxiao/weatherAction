@@ -7,7 +7,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '0 0 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -43,6 +43,6 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 天气预报 (${{env.REPORT_DATE}})
           body: file://result.html
-          to: jiaochunxiao2008@163.com
+          to: jiaochunxiao2008@163.com,jiaochunxiao@baijia.com
           from: GitHub Actions
           content_type: text/html
