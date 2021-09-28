@@ -37,12 +37,12 @@ jobs:
       - name: Send email
         uses: dawidd6/action-send-mail@master
         with:
-          server_address: smtp.qq.com
+          server_address: ${{ secrets.MAIL_SERVICE }}
           server_port: 465
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 天气预报 (${{env.REPORT_DATE}})
           html_body: file://result.html
-          to: jiaochunxiao2008@163.com,jiaochunxiao@baijia.com
+          to: jiaochunxiao2008@163.com
           from: GitHub Actions
           content_type: text/html
