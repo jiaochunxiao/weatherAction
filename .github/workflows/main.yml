@@ -44,5 +44,5 @@ jobs:
           subject: 天气预报 (${{env.REPORT_DATE}})
           html_body: file://result.html
           to: jiaochunxiao2008@163.com
-          from: GitHub Actions
+          from: 天气小助手
           content_type: text/html
