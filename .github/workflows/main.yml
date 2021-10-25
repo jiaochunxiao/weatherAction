@@ -43,6 +43,6 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 天气预报 (${{env.REPORT_DATE}})
           html_body: file://result.html
-          to: narella.du@cn.ey.com
+          to: Narella.Du@cn.ey.com
           from: 天气小助手
           content_type: text/html
