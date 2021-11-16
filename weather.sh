@@ -10,5 +10,5 @@ curl \
   -H "Accept-Language: $LANGUAGE" \
   -H "User-Agent: $UA" \
   -o result.html \
-  https://web.shanbay.com/op/quotes/2021-11-15/
-#  https://wttr.in/$CITY
+  https://wttr.in/$CITY
+# https://web.shanbay.com/op/quotes/2021-11-15/
